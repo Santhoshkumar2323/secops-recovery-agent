@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-11-02T08:08:16.411186+00:00",
+  "today": "2026-10-29",
+  "runs": 1,
+  "n_cases": 33,
+  "systems": {
+    "workflow": {
+      "n": 33,
+      "verdict_ok": 33,
+      "alt_ok": 0,
+      "alt_total": 14,
+      "p50": 1.9250448999810033,
+      "p95": 2.8765305400127543,
+      "tokens_mean": 893.9090909090909,
+      "tokens_max": 1221,
+      "calls_mean": 0.0,
+      "errors": 0,
+      "failures": []
+    },
+    "solo": {
+      "n": 33,
+      "verdict_ok": 32,
+      "alt_ok": 14,
+      "alt_total": 14,
+      "p50": 5.915163800003938,
+      "p95": 24.19806036002697,
+      "tokens_mean": 2275.6060606060605,
+      "tokens_max": 3473,
+      "calls_mean": 1.8181818181818181,
+      "errors": 0,
+      "failures": [
+        {
+          "tag": "question",
+          "expected": "NO_RESTORE_REQUESTED",
+          "got": "NEEDS_MORE_INFO",
+          "message": "Hi team, how does the disaster recovery process work?",
+          "error": ""
+        }
+      ]
+    },
+    "hybrid": {
+      "n": 33,
+      "verdict_ok": 33,
+      "alt_ok": 14,
+      "alt_total": 14,
+      "p50": 2.2561432999791577,
+      "p95": 4.212940819992218,
+      "tokens_mean": 1003.6060606060606,
+      "tokens_max": 1377,
+      "calls_mean": 0.6363636363636364,
+      "errors": 0,
+      "failures": []
+    }
+  }
+}

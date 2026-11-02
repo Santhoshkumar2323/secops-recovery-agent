@@ -1,0 +1,8 @@
+langgraph>=0.4
+langchain-core>=0.3
+langchain-groq>=0.2
+pydantic>=2.5
+python-dotenv>=1.0
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8.0

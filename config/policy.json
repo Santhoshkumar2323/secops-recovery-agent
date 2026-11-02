@@ -1,0 +1,32 @@
+{
+  "resources": {
+    "db_snapshot": {
+      "hot_days": 14,
+      "restorable": true,
+      "glacier_days": null,
+      "aliases": ["Postgres backup", "database backup"],
+      "dr_alternative": "Point-in-time schema replay from read-replica WAL logs or warehouse delta export."
+    },
+    "audit_log": {
+      "hot_days": 30,
+      "restorable": true,
+      "glacier_days": 365,
+      "aliases": ["SIEM logs", "security logs", "access logs"],
+      "dr_alternative": "Free deep-archive retrieval while inside Glacier vault retention; otherwise partial SIEM index summary."
+    },
+    "sandbox_env": {
+      "hot_days": 7,
+      "restorable": true,
+      "glacier_days": null,
+      "aliases": ["staging environment", "dev environment"],
+      "dr_alternative": "Automated Terraform re-seed from the latest golden main-branch image."
+    },
+    "ephemeral_cache": {
+      "hot_days": 0,
+      "restorable": false,
+      "glacier_days": null,
+      "aliases": ["Redis", "Memcached"],
+      "dr_alternative": "None. Ephemeral Redis/Memcached tiers are volatile and non-recoverable."
+    }
+  }
+}
